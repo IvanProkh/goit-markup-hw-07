@@ -67,7 +67,7 @@ ul {
 
 /* =========== HEADER =========== */
 
-.header {
+.page-header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -75,7 +75,7 @@ ul {
   margin-right: 50px;
 }
 
-.header__box {
+.header-box {
   display: flex;
   align-items: baseline;
 }
@@ -511,7 +511,7 @@ ul {
 
 /* =========== FOOTER =========== */
 
-.footer-section {
+.page-footer {
   display: flex;
   padding: 60px 0px;
   background: var(--background-first);

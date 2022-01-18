@@ -1,0 +1,112 @@
+.section-list {
+  padding-top: 94px;
+}
+
+.title-seo {
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.div-list .list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.list-scroll {
+  display: flex;
+  margin-bottom: 94px;
+}
+
+.list-title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.list-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 270px;
+
+  line-height: 1.71;
+  color: var(--text-secondary);
+}
+
+.icon-antenna {
+  display: flex;
+  padding: 25px 100px;
+  height: 120px;
+  width: 270px;
+
+  background-color: var(--background-third);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+/* =========== What are we doing =========== */
+
+.container .about {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.about img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.title-img {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.image-about:not(:first-child) {
+  margin-top: 0;
+  margin-left: 30px;
+}
+
+.image-about {
+  position: relative;
+}
+
+.about-div {
+  position: absolute;
+  bottom: 0px;
+
+  align-items: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 370px;
+  height: 70px;
+
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.text-about {
+  margin: 0;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
