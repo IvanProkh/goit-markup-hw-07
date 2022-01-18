@@ -1,20 +1,6 @@
-$color: red;
+@import './utils/variables.scss';
+@import './utils/placeholder';
 
-$bg-color: blue;
-
-.page__footer {
-  color: $bg-color;
-
-  & + .logo {
-    background-color: #fff;
-  }
-}
-
-.page__body {
-  width: 10px;
-  height: 20px;
-
-  &:hover {
-    background-color: $bg-color;
-  }
+.page_content {
+  background-color: $theme-color;
 }
