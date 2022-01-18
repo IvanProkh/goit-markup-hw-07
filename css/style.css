@@ -67,7 +67,7 @@ ul {
 
 /* =========== HEADER =========== */
 
-header {
+.header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -75,7 +75,7 @@ header {
   margin-right: 50px;
 }
 
-.header-div {
+.header__box {
   display: flex;
   align-items: baseline;
 }
