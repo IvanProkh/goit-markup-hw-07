@@ -343,9 +343,17 @@ ul {
   color: #ffffff;
 }
 
-.section-masters {
+.masters-section {
   padding-top: 94px;
-  background: var(--background-third);
+  background: #f5f4fa;
+}
+
+.masters-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
 }
 
 .masters-list {
@@ -354,52 +362,39 @@ ul {
   display: flex;
 }
 
-.title-masters {
-  margin-top: 0px;
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  color: var(--text-primary);
-}
-
-.pfoto {
+.masters-list__pfoto {
   margin-bottom: 30px;
 }
 
-.masters {
+.masters-list__master {
   padding-bottom: 30px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  background-color: var(--second-color);
+  background-color: #ffffff;
 }
 
-.masters:not(:last-child) {
+.masters-list__master:not(:last-child) {
   margin-right: 30px;
 }
 
-.name {
-  margin-top: 0px;
+.masters-list__name {
   margin-bottom: 10px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  color: var(--text-primary);
 }
 
-.profession {
-  margin-top: 0px;
+.masters-list__profession {
   margin-bottom: 0px;
   text-align: center;
   font-size: 16px;
   line-height: 1.18;
-  color: var(--text-secondary);
+  color: #757575;
 }
 
-.icons {
+.master-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -410,7 +405,11 @@ ul {
   margin-right: 32px;
 }
 
-.link-icon {
+.master-icons__social-icon:not(:last-child) {
+  margin-right: 10px;
+}
+
+.master-icons__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -428,11 +427,12 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials-icons:not(:last-child) {
-  margin-right: 10px;
+.master-icons__link:hover,
+.master-icons__link:focus {
+  background-color: #2196f3;
 }
 
-.social {
+.master-icons__social {
   display: block;
   padding: 12px;
   fill: #afb1b8;
@@ -440,14 +440,9 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social:hover,
-.social:focus {
+.master-icons__social:hover,
+.master-icons__social:focus {
   fill: #ffffff;
-}
-
-.link-icon:hover,
-.link-icon:focus {
-  background-color: var(--theme-color);
 }
 
 .clients-div {
