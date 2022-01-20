@@ -1,11 +1,15 @@
 .page-footer {
   display: flex;
   padding: 60px 0px;
-  background: var(--background-first);
+  background: $bg-first;
 }
 
-.footer-div {
+.footer-box {
   display: flex;
+}
+
+.contact-box {
+  margin-right: 70px;
 }
 
 /* =========== Footer WebStudio =========== */
@@ -13,35 +17,31 @@
 .footer-logo {
   margin-bottom: 20px;
 
-  font-family: var(--secondary-font);
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
+  font-family: $secondary-font;
 }
 
-.footer-logoweb {
-  color: var(--theme-color);
+.footer-logo--theme-color {
+  color: $theme-color;
 }
 
-.footer-logostudio {
-  color: var(--second-color);
+.footer-logo--white-color {
+  color: $white-color;
 }
 
 /* =========== Address =========== */
 
-.box-contact {
-  margin-right: 70px;
-}
-
-.footer-contact.address {
+.footer-address__google-address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  color: var(--second-color);
+  color: $white-color;
 }
 
-.element {
+.footer-address__element {
   display: flex;
   align-items: center;
   padding: 32px 0px;
@@ -49,68 +49,67 @@
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--text-secondary);
+  color: $text-secondary;
 }
 
-.element:hover,
-.element:focus {
-  color: var(--theme-color);
+.footer-address__element:hover,
+.footer-address__element:focus {
+  color: $theme-color;
 }
 
-.footer-elements > li:not(:last-child) {
+.footer-address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer-contact {
+.footer-address__footer-contact {
   padding: 0;
 
   font-style: normal;
   line-height: 1.71;
-  color: var(--text-third);
+  color: $text-third;
 }
 
 /* =========== join section =========== */
 
-.join-div {
+.join-block {
   margin-right: 93px;
 }
 
-.title-join {
+.join-title {
   margin-top: 12px;
   margin-bottom: 20px;
 
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--second-color);
+  color: $white-color;
 }
 
 .social-icons {
   display: flex;
 }
 
-.footer-icon:not(:last-child) {
+.social-icons__footer-icon:not(:last-child) {
   margin-right: 10px;
 }
 
-.footer-icon {
+.social-icons__footer-icon {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color $transition;
 }
 
-.footer-social {
+.social-icons__footer-social {
   display: block;
   padding: 12px;
 
-  fill: #ffffff;
+  fill: $white-color;
 }
 
-.footer-icon:hover,
-.footer-icon:focus {
-  background-color: var(--theme-color);
+.social-icons__footer-icon:hover,
+.social-icons__footer-icon:focus {
+  background-color: $theme-color;
 }
 
 /* =========== Subscribe section =========== */
@@ -119,46 +118,44 @@
   margin-left: auto;
 }
 
-.subscribe-title {
+.footer-form__subscribe-title {
   display: block;
   margin-top: 12px;
   margin-bottom: 20px;
 
   font-weight: bold;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--second-color);
+  color: $white-color;
 }
 
-.subscribe-mail {
+.footer-form__subscribe-mail {
   display: flex;
 }
 
-.subscribe-mail input {
+.footer-form__input {
   margin-right: 12px;
   padding: 14px 0px 14px 15px;
   min-width: 358px;
   max-height: 50px;
 
   cursor: pointer;
-  background: #2f303a;
+  background: $bg-first;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  color: var(--second-color);
+  color: $white-color;
 
-  transition: border-color var(--transition);
+  transition: border-color $transition;
 }
 
-.subscribe-mail input:focus {
-  border: 1px solid var(--theme-color);
+.footer-form__input:focus {
+  border: 1px solid $theme-color;
   outline: none;
 }
 
-.subscribe-mail::placeholder {
+.footer-form__subscribe-mail::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -166,7 +163,7 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe-mail button {
+.footer-form__button {
   display: flex;
   padding: 10px 30px;
   min-width: 200px;
@@ -178,16 +175,16 @@
   letter-spacing: 0.06em;
 
   cursor: pointer;
-  color: var(--second-color);
-  background: var(--theme-color);
+  color: $white-color;
+  background: $theme-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
 }
 
-.icon-send {
+.footer-form__icon-send {
   margin-left: 10px;
   margin-top: 3px;
 
-  fill: var(--second-color);
+  fill: $white-color;
 }

@@ -323,53 +323,53 @@
     </main>
 
     <footer class="page-footer">
-        <div class="container footer-div">
+        <div class="container footer-box">
 
             <!-- Секция, контакты -->
-            <div class="box-contact">
+            <div class="contact-box">
                 <div class="footer-logo">
-                    <a href="./index.html">
-                        <span class="footer-logoweb">Web</span><span class="footer-logostudio">Studio</span>
+                    <a class="footer-logo__link" href="./index.html">
+                        <span class="footer-logo--theme-color">Web</span><span class="footer-logo--white-color">Studio</span>
                     </a>
                 </div>
-                <address>
-                    <ul class="footer-elements">
-                        <li><a class="footer-contact address" href="https://goo.gl/maps/oZVZi51C9zfMpwm39">г. Киев, пр-т Леси Украинки,
+                <address class="address-list">
+                    <ul class="footer-address">
+                        <li class="footer-address__item"><a class="footer-address__footer-contact footer-address__google-address" href="https://goo.gl/maps/oZVZi51C9zfMpwm39">г. Киев, пр-т Леси Украинки,
                                 26 </a></li>
-                        <li><a class="footer-contact element" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li><a class="footer-contact element" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                        <li class="footer-address__item"><a class="footer-address__footer-contact footer-address__element" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="footer-address__item"><a class="footer-address__footer-contact footer-address__element" href="tel:+380961111111">+38 096 111 11 11</a></li>
                     </ul>
                 </address>
             </div>
 
             <!-- Секции присоединяйтесь -->
-            <div class="join-div">
-                <h3 class="title-join">присоединяйтесь</h3>
+            <div class="join-block">
+                <h3 class="join-title">присоединяйтесь</h3>
                 <ul class="social-icons">
-                    <li class="footer-icon">
-                        <a class="footer-link" href="#">
-                            <svg class="footer-social" width="44" height="44">
+                    <li class="social-icons__footer-icon">
+                        <a class="social-icons__footer-link" href="#">
+                            <svg class="social-icons__footer-social" width="44" height="44">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-icon">
-                        <a class="footer-link" href="#">
-                            <svg class="footer-social" width="44" height="44">
+                    <li class="social-icons__footer-icon">
+                        <a class="social-icons__footer-link" href="#">
+                            <svg class="social-icons__footer-social" width="44" height="44">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li> 
-                    <li class="footer-icon">
-                        <a class="footer-link" href="#">
-                            <svg class="footer-social" width="44" height="44">
+                    <li class="social-icons__footer-icon">
+                        <a class="social-icons__footer-link" href="#">
+                            <svg class="social-icons__footer-social" width="44" height="44">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-icon">
-                        <a class="footer-link" href="#">
-                            <svg class="footer-social" width="44" height="44">
+                    <li class="social-icons__footer-icon">
+                        <a class="social-icons__footer-link" href="#">
+                            <svg class="social-icons__footer-social" width="44" height="44">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a>
@@ -378,14 +378,14 @@
             </div>
             <!-- Секция подписки -->
             <div class="subscribe-box">
-                <form>
-                    <label class="subscribe-title" for="email">Подпишитесь на рассылку</label>
+                <form class="footer-form">
+                    <label class="footer-form__subscribe-title" for="email">Подпишитесь на рассылку</label>
 
-                    <div class="subscribe-mail">
-                        <input type="email" name="mail" id="email" placeholder="E-mail">
+                    <div class="footer-form__subscribe-mail">
+                        <input class="footer-form__input" type="email" name="mail" id="email" placeholder="E-mail">
                     
-                        <button type="submit">Подписаться
-                            <svg class="icon-send" width="24" height="24">
+                        <button class="footer-form__button" type="submit">Подписаться
+                            <svg class="footer-form__icon-send" width="24" height="24">
                                 <use href="./images/icons.svg#icon-send"></use>
                             </svg>
                         </button>
@@ -395,21 +395,16 @@
         </div>
     </footer>
 
-<!-- Секции БЕКДРОП -->
-
+    <!-- Секции БЕКДРОП -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="modal-close" data-modal-close>
-                <svg class="close" width="11" height="11">
+            <button class="modal-button" data-modal-close>
+                <svg class="modal-button__close" width="11" height="11">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
-
-
             <form class="form js-speaker-form">
-
                 <p class="backdrop-title">Оставьте свои данные, мы вам перезвоним</p>
-
                 <div class="form-field">
                     <label class="form-label" for="name" >Имя</label>
                     <input class="form-input" type="text" name="name" id="name">
