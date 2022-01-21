@@ -62,12 +62,12 @@
   display: flex;
 }
 
-.products-list__item:not(:first-child) {
-  margin-left: 30px;
-}
-
 .products-list__item {
   position: relative;
+
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 
 .products-list__bg {
