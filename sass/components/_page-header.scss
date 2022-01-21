@@ -45,11 +45,11 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: $text-primary;
-}
 
-.navigator__link:hover,
-.navigator__link:focus {
-  color: $theme-color;
+  &:hover,
+  &:focus {
+    color: $theme-color;
+  }
 }
 
 .navigator__link--current {
@@ -90,11 +90,11 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: $text-secondary;
-}
 
-.contacts__contact:hover,
-.contacts__contact:focus {
-  color: $theme-color;
+  &:hover,
+  &:focus {
+    color: $theme-color;
+  }
 }
 
 .contacts__webpost {
