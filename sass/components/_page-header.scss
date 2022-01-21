@@ -1,9 +1,11 @@
 .header {
-  display: flex;
-  align-items: baseline;
-
   background: $white-color;
   border-bottom: 1px solid $border-color;
+}
+
+.header-border {
+  display: flex;
+  align-items: baseline;
 }
 
 /* =========== WebStudio =========== */

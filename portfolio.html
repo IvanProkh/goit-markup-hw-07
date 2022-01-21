@@ -16,42 +16,42 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="./css/main.min.css">
-
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
 </head>
 
 <body>
     <!-- Шапка сайта -->
-    <header class="header container">
-        <div class="header-logo">
-            <a class="header-logo__link" href="./index.html">
-                <span class="header-logo__link--theme">Web</span><span class="header-logo__link--black">Studio</span>
-            </a>
+    <header class="header">
+        <div class="header-border container">
+            <div class="header-logo">
+                <a class="header-logo__link" href="./index.html">
+                    <span class="header-logo__link--theme">Web</span><span class="header-logo__link--black">Studio</span>
+                </a>
+            </div>
+            <ul class="navigator">
+                <li class="navigator__iteam"><a class="navigator__link"
+                        href="./index.html">Студия</a></li>
+                <li class="navigator__iteam"><a class="navigator__link navigator__link--current" href="./portfolio.html">Портфолио</a></li>
+                <li class="navigator__iteam"><a class="navigator__link" href="#">Контакты</a></li>
+            </ul>
+            <ul class="contacts">
+                <li class="contacts__iteam">
+                    <a class="contacts__contact" href="mailto:info@devstudio.com">
+                        <svg class="contacts__webpost">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="contacts__iteam">
+                    <a class="contacts__contact" href="tel:+380961111111">
+                        <svg class="contacts__smartphone">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
         </div>
-        <ul class="navigator">
-            <li class="navigator__iteam"><a class="navigator__link" href="./index.html">Студия</a>
-            </li>
-            <li class="navigator__iteam"><a class="navigator__link navigator__link--current" href="./portfolio.html">Портфолио</a></li>
-            <li class="navigator__iteam"><a class="navigator__link" href="#">Контакты</a></li>
-        </ul>
-        <ul class="contacts">
-            <li class="contacts__iteam">
-                <a class="contacts__contact" href="mailto:info@devstudio.com">
-                    <svg class="contacts__webpost">
-                        <use href="./images/icons.svg#icon-envelope"></use>
-                    </svg>
-                    info@devstudio.com
-                </a>
-            </li>
-            <li class="contacts__iteam">
-                <a class="contacts__contact" href="tel:+380961111111">
-                    <svg class="contacts__smartphone">
-                        <use href="./images/icons.svg#icon-smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11
-                </a>
-            </li>
-        </ul>
     </header>
 
     <main class="portfolio-main">
@@ -74,9 +74,9 @@
                         шпионажа и атак на защищённые сервера конкурентов.
                         </p>
                     </div>
-                    <div class="border">
-                        <h3 class="products-name">Технокряк</h3>
-                        <p class="menu-link">Веб-сайт</p>
+                    <div class="content-box__border">
+                        <h3 class="content-box__products-name">Технокряк</h3>
+                        <p class="content-box__menu-link">Веб-сайт</p>
                     </div>
                 </li>
                 <li class="content-box__product">
@@ -87,9 +87,9 @@
                             шпионажа и атак на защищённые сервера конкурентов.
                         </p>
                     </div>
-                    <div class="border">
-                        <h3 class="products-name">Постер New Orlean vs Golden Star</h3>
-                        <p class="menu-link">Дизайн</p>
+                    <div class="content-box__border">
+                        <h3 class="content-box__products-name">Постер New Orlean vs Golden Star</h3>
+                        <p class="content-box__menu-link">Дизайн</p>
                     </div>
                 </li>
                 <li class="content-box__product">
@@ -100,9 +100,9 @@
                             шпионажа и атак на защищённые сервера конкурентов.
                         </p>
                     </div>
-                    <div class="border">
-                        <h3 class="products-name">Ресторан Seafood</h3>
-                        <p class="menu-link">Приложение</p>
+                    <div class="content-box__border">
+                        <h3 class="content-box__products-name">Ресторан Seafood</h3>
+                        <p class="content-box__menu-link">Приложение</p>
                     </div>
                 </li>
                 <li class="content-box__product">
@@ -113,9 +113,9 @@
                             шпионажа и атак на защищённые сервера конкурентов.
                         </p>
                     </div>
-                    <div class="border">
-                        <h3 class="products-name">Проект Prime</h3>
-                        <p class="menu-link">Маркетинг</p>
+                    <div class="content-box__border">
+                        <h3 class="content-box__products-name">Проект Prime</h3>
+                        <p class="content-box__menu-link">Маркетинг</p>
                     </div>
                 </li>
                 <li class="content-box__product">
@@ -126,9 +126,9 @@
                             шпионажа и атак на защищённые сервера конкурентов.
                         </p>
                     </div>
-                    <div class="border">
-                        <h3 class="products-name">Проект Boxes</h3>
-                        <p class="menu-link">Приложение</p>
+                    <div class="content-box__border">
+                        <h3 class="content-box__products-name">Проект Boxes</h3>
+                        <p class="content-box__menu-link">Приложение</p>
                     </div>
                 </li>
                 <li class="content-box__product">
@@ -139,9 +139,9 @@
                             шпионажа и атак на защищённые сервера конкурентов.
                         </p>
                     </div>
-                    <div class="border">
-                        <h3 class="products-name">Inspiration has no Borders</h3>
-                        <p class="menu-link">Веб-сайт</p>
+                    <div class="content-box__border">
+                        <h3 class="content-box__products-name">Inspiration has no Borders</h3>
+                        <p class="content-box__menu-link">Веб-сайт</p>
                     </div>
                 </li>
                 <li class="content-box__product">
@@ -152,9 +152,9 @@
                             шпионажа и атак на защищённые сервера конкурентов.
                         </p>
                     </div>
-                    <div class="border">
-                        <h3 class="products-name">Издание Limited Edition</h3>
-                        <p class="menu-link">Дизайн</p>
+                    <div class="content-box__border">
+                        <h3 class="content-box__products-name">Издание Limited Edition</h3>
+                        <p class="content-box__menu-link">Дизайн</p>
                     </div>
                 </li>
                 <li class="content-box__product">
@@ -165,9 +165,9 @@
                             шпионажа и атак на защищённые сервера конкурентов.
                         </p>
                     </div>
-                    <div class="border">
-                        <h3 class="products-name">Проект LAB</h3>
-                        <p class="menu-link">Маркетинг</p>
+                    <div class="content-box__border">
+                        <h3 class="content-box__products-name">Проект LAB</h3>
+                        <p class="content-box__menu-link">Маркетинг</p>
                     </div>
                 </li>
                 <li class="content-box__product">
@@ -178,9 +178,9 @@
                             шпионажа и атак на защищённые сервера конкурентов.
                         </p>
                     </div>
-                    <div class="border">
-                        <h3 class="products-name">Growing Business</h3>
-                        <p class="menu-link">Приложение</p>
+                    <div class="content-box__border">
+                        <h3 class="content-box__products-name">Growing Business</h3>
+                        <p class="content-box__menu-link">Приложение</p>
                     </div>
                 </li>
             </ul>
