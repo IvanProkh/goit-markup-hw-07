@@ -547,8 +547,7 @@ ul {
   color: #757575;
 }
 
-.footer-address__element:hover,
-.footer-address__element:focus {
+.footer-address__element:hover, .footer-address__element:focus {
   color: #2196f3;
 }
 
@@ -584,10 +583,6 @@ ul {
   display: flex;
 }
 
-.social-icons__footer-icon:not(:last-child) {
-  margin-right: 10px;
-}
-
 .social-icons__footer-icon {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
@@ -595,15 +590,18 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.social-icons__footer-icon:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icons__footer-icon:hover, .social-icons__footer-icon:focus {
+  background-color: #2196f3;
+}
+
 .social-icons__footer-social {
   display: block;
   padding: 12px;
   fill: #ffffff;
-}
-
-.social-icons__footer-icon:hover,
-.social-icons__footer-icon:focus {
-  background-color: #2196f3;
 }
 
 /* =========== Subscribe section =========== */

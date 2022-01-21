@@ -50,12 +50,17 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: $text-secondary;
+
+  &:hover,
+  &:focus {
+    color: $theme-color;
+  }
 }
 
-.footer-address__element:hover,
-.footer-address__element:focus {
-  color: $theme-color;
-}
+// .footer-address__element:hover,
+// .footer-address__element:focus {
+//   color: $theme-color;
+// }
 
 .footer-address__item:not(:last-child) {
   margin-bottom: 9px;
@@ -90,14 +95,23 @@
   display: flex;
 }
 
-.social-icons__footer-icon:not(:last-child) {
-  margin-right: 10px;
-}
+// .social-icons__footer-icon:not(:last-child) {
+//   margin-right: 10px;
+// }
 
 .social-icons__footer-icon {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color $transition;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $theme-color;
+  }
 }
 
 .social-icons__footer-social {
@@ -107,10 +121,10 @@
   fill: $white-color;
 }
 
-.social-icons__footer-icon:hover,
-.social-icons__footer-icon:focus {
-  background-color: $theme-color;
-}
+// .social-icons__footer-icon:hover,
+// .social-icons__footer-icon:focus {
+//   background-color: $theme-color;
+// }
 
 /* =========== Subscribe section =========== */
 
@@ -148,12 +162,17 @@
   color: $white-color;
 
   transition: border-color $transition;
+
+  &:focus {
+    border: 1px solid $theme-color;
+    outline: none;
+  }
 }
 
-.footer-form__input:focus {
-  border: 1px solid $theme-color;
-  outline: none;
-}
+// .footer-form__input:focus {
+//   border: 1px solid $theme-color;
+//   outline: none;
+// }
 
 .footer-form__subscribe-mail::placeholder {
   font-size: 16px;
