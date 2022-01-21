@@ -54,24 +54,37 @@
 
 .navigator__link--current {
   color: $theme-color;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+
+    height: 4px;
+    width: 100%;
+
+    background-color: $theme-color;
+    border-radius: 2px;
+  }
 }
 
 .navigator__iteam:not(:last-child) {
   margin-right: 50px;
 }
 
-.navigator__link--current::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -1px;
+// .navigator__link--current::after {
+//   content: '';
+//   position: absolute;
+//   left: 0;
+//   bottom: -1px;
 
-  height: 4px;
-  width: 100%;
+//   height: 4px;
+//   width: 100%;
 
-  background-color: $theme-color;
-  border-radius: 2px;
-}
+//   background-color: $theme-color;
+//   border-radius: 2px;
+// }
 
 /* =========== Contacts =========== */
 
@@ -95,6 +108,13 @@
   &:focus {
     color: $theme-color;
   }
+
+  &:hover .contacts__webpost,
+  &:focus .contacts__webpost,
+  &:hover .contacts__smartphone,
+  &:focus .contacts__smartphone {
+    fill: $theme-color;
+  }
 }
 
 .contacts__webpost {
@@ -104,12 +124,12 @@
   fill: $text-secondary;
 }
 
-.contacts__contact:hover .contacts__webpost,
-.contacts__contact:focus .contacts__webpost,
-.contacts__contact:hover .contacts__smartphone,
-.contacts__contact:focus .contacts__smartphone {
-  fill: $theme-color;
-}
+// .contacts__contact:hover .contacts__webpost,
+// .contacts__contact:focus .contacts__webpost,
+// .contacts__contact:hover .contacts__smartphone,
+// .contacts__contact:focus .contacts__smartphone {
+//   fill: $theme-color;
+// }
 
 .contacts__smartphone {
   width: 10px;

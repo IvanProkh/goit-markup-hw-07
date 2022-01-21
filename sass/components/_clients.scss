@@ -21,7 +21,7 @@
   padding: 16 32;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid $element-color;
   border-radius: 4px;
   transition: border-color $transition;
 
@@ -29,6 +29,7 @@
   &:focus {
     border-color: $theme-color;
   }
+
   &:hover .clients__logo,
   &:focus .clients__logo {
     fill: $theme-color;
@@ -40,6 +41,6 @@
 }
 
 .clients__logo {
-  fill: #afb1b8;
+  fill: $element-color;
   transition: fill $transition;
 }
