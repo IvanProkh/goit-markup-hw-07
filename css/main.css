@@ -329,7 +329,6 @@ ul {
   color: #ffffff;
 }
 
-/* =========== masters-section =========== */
 .masters-section {
   padding-top: 94px;
   background: #f5f4fa;
@@ -414,8 +413,7 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.master-icons__link:hover,
-.master-icons__link:focus {
+.master-icons__link:hover, .master-icons__link:focus {
   background-color: #2196f3;
 }
 
@@ -427,12 +425,10 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.master-icons__social:hover,
-.master-icons__social:focus {
+.master-icons__social:hover, .master-icons__social:focus {
   fill: #ffffff;
 }
 
-/* =========== clients =========== */
 .clients-div {
   padding-top: 94px;
 }
@@ -470,6 +466,15 @@ ul {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.clients__link:hover, .clients__link:focus {
+  border-color: #2196f3;
+}
+
+.clients__link:hover .clients__logo,
+.clients__link:focus .clients__logo {
+  fill: #2196f3;
+}
+
 .clients__profile:not(:last-child) {
   margin-right: 30px;
 }
@@ -478,16 +483,6 @@ ul {
   fill: #afb1b8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients__link:hover .clients__logo,
-.clients__link:focus .clients__logo {
-  fill: #2196f3;
-}
-
-.clients__link:hover,
-.clients__link:focus {
-  border-color: #2196f3;
 }
 
 .page-footer {
