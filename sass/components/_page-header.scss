@@ -73,19 +73,6 @@
   margin-right: 50px;
 }
 
-// .navigator__link--current::after {
-//   content: '';
-//   position: absolute;
-//   left: 0;
-//   bottom: -1px;
-
-//   height: 4px;
-//   width: 100%;
-
-//   background-color: $theme-color;
-//   border-radius: 2px;
-// }
-
 /* =========== Contacts =========== */
 
 .contacts {
@@ -123,13 +110,6 @@
   margin-right: 10px;
   fill: $text-secondary;
 }
-
-// .contacts__contact:hover .contacts__webpost,
-// .contacts__contact:focus .contacts__webpost,
-// .contacts__contact:hover .contacts__smartphone,
-// .contacts__contact:focus .contacts__smartphone {
-//   fill: $theme-color;
-// }
 
 .contacts__smartphone {
   width: 10px;
