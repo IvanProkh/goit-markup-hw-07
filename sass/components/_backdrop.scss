@@ -54,6 +54,11 @@
   background-color: $white-color;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+
+  &:focus .modal-button__close,
+  &:hover .modal-button__close {
+    fill: $theme-color;
+  }
 }
 
 .modal-button__close {
@@ -64,11 +69,6 @@
   fill: $black-color;
 
   transition: fill $transition;
-}
-
-.modal-button:focus .modal-button__close,
-.modal-button:hover .modal-button__close {
-  fill: $theme-color;
 }
 
 .backdrop-title {
@@ -101,6 +101,15 @@
   border-radius: 4px;
 
   transition: border $transition;
+
+  &:focus {
+    border: 1px solid $theme-color;
+    outline: none;
+  }
+
+  &:focus + .form-field__icon {
+    fill: $theme-color;
+  }
 }
 
 .form-field__label {
@@ -122,15 +131,6 @@
   transition: fill $transition;
 }
 
-.form-field__input:focus + .form-field__icon {
-  fill: $theme-color;
-}
-
-.form-field__input:focus {
-  border: 1px solid $theme-color;
-  outline: none;
-}
-
 .form-field__comment {
   resize: none;
   cursor: pointer;
@@ -145,19 +145,19 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border $transition;
-}
 
-.form-field__comment:focus {
-  border: 1px solid $theme-color;
-  outline: none;
-}
+  &:focus {
+    border: 1px solid $theme-color;
+    outline: none;
+  }
 
-.form-field__comment::placeholder {
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.01em;
+  &::placeholder {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
 
-  color: rgba(117, 117, 117, 0.5);
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .form-agreement {
@@ -184,6 +184,14 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+
+  &:checked ~ .form-agreement__wrapper-icon {
+    opacity: 0;
+  }
+
+  &:checked ~ .form-agreement__wrapper-icon--check {
+    opacity: 1;
+  }
 }
 
 .form-agreement__link {
@@ -197,14 +205,6 @@
   align-items: center;
 }
 
-.form-agreement__checkbox:checked ~ .form-agreement__wrapper-icon {
-  opacity: 0;
-}
-
-.form-agreement__checkbox:checked ~ .form-agreement__wrapper-icon--check {
-  opacity: 1;
-}
-
 .form-agreement__wrapper-icon--check {
   cursor: pointer;
   opacity: 0;
@@ -216,6 +216,7 @@
   cursor: pointer;
   fill: $black-color;
 }
+
 .form-agreement__icon-check {
   position: absolute;
   top: 5px;
