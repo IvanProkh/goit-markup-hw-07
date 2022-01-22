@@ -522,6 +522,8 @@ ul {
 
 /* =========== Address =========== */
 .footer-address__google-address {
+  padding: 0;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
